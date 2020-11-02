@@ -81,7 +81,7 @@ document.getElementById("display_video").addEventListener("click", function () {
   }
 });
 
-//$ Classe current
+//$ Classe current sur la partie Navigation du Portfolio
 document.querySelector("#display_all").addEventListener("click", function () {
   document.querySelector("#display_all").classList.toggle("current");
   document.querySelector("#display_image").classList.remove("current");
