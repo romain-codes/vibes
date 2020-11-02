@@ -11,7 +11,7 @@
         border-bottom: 1px solid var(--primary-color);
     }
 
-    /* HEADER */
+    /*! HEADER */
     #header {
         display: block;
     }
@@ -30,7 +30,7 @@
         display: none;
     }
 
-   #header a.icon {
+    #header a.icon {
         display: block;
         color: var(--primary-color);
         padding: 1rem;
@@ -46,7 +46,11 @@
         padding: 1rem;
     }
 
-    /* BANNER */
+    /*! BANNER */
+    #banner #goutte {
+        display: none;
+    }
+
     .bg-mountain-img {
         height: 300px;
     }
@@ -55,6 +59,7 @@
         font-size: 1rem;
         top: 30%;
         width: 100%;
+        text-shadow: 1px 1px 1px #000;
     }
 
     .paragraph-banner {
@@ -64,7 +69,7 @@
         padding: 0 1.5rem;
     }
 
-    /* ABOUT */
+    /*! ABOUT */
     #about {
         display: block;
         padding: 2rem 0;
@@ -85,11 +90,17 @@
         margin-bottom: 1rem;
     }
 
+    .heading-about,
+    .p1-why,
+    .p2-why {
+        text-align: center;
+    }
+
     .details-bloc {
         margin-top: 0;
     }
 
-    /* PORTFOLIO */
+    /*! PORTFOLIO */
     .portfolio-img {
         display: block;
     }
@@ -124,7 +135,7 @@
         margin: 0;
     }
 
-    /* TESTIMONIAL */
+    /*! TESTIMONIAL */
     .heading-style {
         font-size: 1.5rem;
         padding-top: 2rem;
@@ -165,7 +176,7 @@
         padding-top: .5rem;
     }
 
-    /* CALL TO ACTION */
+    /*! CALL TO ACTION */
     .cta-container {
         background-attachment: scroll;
         height: 350px;
@@ -178,7 +189,7 @@
         margin-bottom: 2rem;
     }
 
-    /* CONTACT */
+    /*! CONTACT */
     .contact-container {
         padding-bottom: 2rem;
     }
@@ -198,7 +209,7 @@
         padding: 0;
     }
 
-    /* FOOTER */
+    /*! FOOTER */
     .footer-container {
         display: block;
         padding: 2rem 1.5rem 0;

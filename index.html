@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <!-- HEADER -->
+        <!--! HEADER -->
         <header id="header">
             <div class="header-logo">
                 <a href="#"><img src="img/logo.png" alt="Logo" class="logo"></a>
@@ -35,8 +35,11 @@
             </nav>
         </header>
 
-        <!-- BANNER -->
+        <!--! BANNER -->
         <section id="banner">
+            <button id="goutte">
+                <i class="fas fa-tint fa-2x"></i>
+            </button>
             <div class="bg-mountain">
                 <img src="img/mountain.jpg" alt="mountain Background Image" class="bg-mountain-img">
                 <h1 class="heading-banner">
@@ -50,7 +53,7 @@
             </div>
         </section>
 
-        <!-- ABOUT -->
+        <!--! ABOUT -->
         <section id="about">
             <div class="why">
                 <h2 class="heading-about">Why Choose Us ?</h2>
@@ -124,26 +127,26 @@
             </div>
         </section>
 
-        <!-- PORTFOLIO -->
+        <!--! PORTFOLIO -->
         <section id="portfolio">
             <div class="portfolio-container">
                 <figure class="portfolio-img">
-                    <img src="img/futur1.jpg" alt="Image futuriste 1">
-                    <img src="img/futur2.jpg" alt="Image futuriste 2">
-                    <img src="img/futur3.jpg" alt="Image futuriste 3">
-                    <img src="img/futur4.jpg" alt="Image futuriste 4">
-                    <img src="img/futur5.jpg" alt="Image futuriste 5">
-                    <img src="img/futur6.jpg" alt="Image futuriste 6">
-                    <img src="img/futur7.jpg" alt="Image futuriste 7">
-                    <img src="img/futur8.jpg" alt="Image futuriste 8">
+                    <a href=""><img class="portfolio_img portimg1 display__audio display__video" src="img/futur1.jpg" alt="Image futuriste 1"></a>
+                    <a href=""><img class="portfolio_img portimg2 display__audio display__video" src="img/futur2.jpg" alt="Image futuriste 2"></a>
+                    <a href=""><img class="portfolio_img portimg3 display__image display__video" src="img/futur3.jpg" alt="Image futuriste 3"></a>
+                    <a href=""><img class="portfolio_img portimg4 display__audio display__image" src="img/futur4.jpg" alt="Image futuriste 4"></a>
+                    <a href=""><img class="portfolio_img portimg5 display__image display__video" src="img/futur5.jpg" alt="Image futuriste 5"></a>
+                    <a href=""><img class="portfolio_img portimg6 display__audio display__image" src="img/futur6.jpg" alt="Image futuriste 6"></a>
+                    <a href=""><img class="portfolio_img portimg7 display__audio display__video" src="img/futur7.jpg" alt="Image futuriste 7"></a>
+                    <a href=""><img class="portfolio_img portimg8 display__image display__video" src="img/futur8.jpg" alt="Image futuriste 8"></a>
                 </figure>
 
                 <div class="portfolio-nav">
                     <div class="portfolio-links">
-                        <a href="#" class="current">All</a>
-                        <a href="#">Audio</a>
-                        <a href="#">Image</a>
-                        <a href="#">Video</a>
+                        <button id="display_all" class="current">All</button>
+                        <button id="display_audio">Audio</button>
+                        <button id="display_image">Image</button>
+                        <button id="display_video">Video</button>
                     </div>
                     <div class="portfolio-btn">
                         <a class="btn-first btn-loadmore" href="#">Load More</a>
@@ -152,7 +155,7 @@
             </div>
         </section>
 
-        <!-- TESTIMONIALS -->
+        <!--! TESTIMONIALS -->
         <section id="testimonials">
             <div class="testimonials-container">
                 <div class="testimonials-heading">
@@ -207,7 +210,7 @@
             </div>
         </section>
 
-        <!-- CALL TO ACTION -->
+        <!--! CALL TO ACTION -->
         <section id="cta">
             <div class="cta-container">
                 <div class="cta-heading">
@@ -227,7 +230,7 @@
             </div>
         </section>
 
-        <!-- CONTACT -->
+        <!--! CONTACT -->
         <section id="contact">
             <div class="contact-container">
                 <h1 class="heading-style">Get in touch</h1>
@@ -263,20 +266,18 @@
             </div>
         </section>
 
-        <!-- FOOTER -->
+        <!--! FOOTER -->
         <section id="footer">
             <div class="footer-container">
                 <div class="footer-about">
                     <h3 class="heading-footer">About vibes</h3>
                     <div class="horizontal-line-footer"></div>
                     <div class="footer-about-txt">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum qui nisi ipsa ipsum, <span
-                                class="footer-bold">fuga aliquam, sit optio porro eveniet at
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum qui nisi ipsa ipsum, <span class="footer-bold">fuga aliquam, sit optio porro eveniet at
                                 quisquam</span> perferendis voluptates, tenetur quo veniam!
                         </p><br>
                         <p>
-                            You can buy this responsive WordPress theme on <a href="#"
-                                class="footer-style">ThemeForest</a>.
+                            You can buy this responsive WordPress theme on <a href="#" class="footer-style">ThemeForest</a>.
                         </p>
                     </div>
                 </div>
@@ -288,12 +289,10 @@
                     <div class="horizontal-line-footer"></div>
                     <div class="footer-about-txt">
                         <p>
-                            <span class="footer-bold">VIBES</span> contains fully working <span
-                                class="footer-bold">MailChimp</span> subscribe form.
+                            <span class="footer-bold">VIBES</span> contains fully working <span class="footer-bold">MailChimp</span> subscribe form.
                         </p>
                         <form>
-                            <input class="input-focus" type="email" name="email" id="email"
-                                placeholder="Your Email Address">
+                            <input class="input-focus" type="email" name="email" id="email" placeholder="Your Email Address">
                         </form>
                         <button type="submit" class="btn-second btn-footer">
                             Subscribe
