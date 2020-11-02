@@ -28,7 +28,7 @@ document.getElementById("goutte").addEventListener("click", function () {
   document.body.classList.toggle("another-theme");
 });
 
-//! PORTFOLIO (à améliorer)
+//! PORTFOLIO
 document.getElementById("display_all").addEventListener("click", function () {
   const divs = document.querySelectorAll('.portfolio_img');
   for (let i = 0; i < divs.length; i++) {
@@ -37,15 +37,14 @@ document.getElementById("display_all").addEventListener("click", function () {
 });
 
 document.getElementById("display_audio").addEventListener("click", function () {
-  document.querySelector(".portimg1").classList.remove("display_hide");
-  document.querySelector(".portimg2").classList.remove("display_hide");
-  document.querySelector(".portimg3").classList.remove("display_hide");
-  document.querySelector(".portimg4").classList.remove("display_hide");
-  document.querySelector(".portimg5").classList.remove("display_hide");
-  document.querySelector(".portimg6").classList.remove("display_hide");
-  document.querySelector(".portimg7").classList.remove("display_hide");
-  document.querySelector(".portimg8").classList.remove("display_hide");
+  //$ Retirer le display_hide des éléments qui ne concernent pas Audio
+  const hidedisplay = document.querySelectorAll(".portfolio_img");
 
+  hidedisplay.forEach(function (hidedisp) {
+    hidedisp.classList.remove("display_hide");
+  });
+
+  //$ Ajouter le display_hide sur les éléments quiconcernent pas Audio
   const divs = document.querySelectorAll('.display__audio');
   for (let i = 0; i < divs.length; i++) {
     divs[i].classList.toggle('display_hide');
@@ -53,15 +52,14 @@ document.getElementById("display_audio").addEventListener("click", function () {
 });
 
 document.getElementById("display_image").addEventListener("click", function () {
-  document.querySelector(".portimg1").classList.remove("display_hide");
-  document.querySelector(".portimg2").classList.remove("display_hide");
-  document.querySelector(".portimg3").classList.remove("display_hide");
-  document.querySelector(".portimg4").classList.remove("display_hide");
-  document.querySelector(".portimg5").classList.remove("display_hide");
-  document.querySelector(".portimg6").classList.remove("display_hide");
-  document.querySelector(".portimg7").classList.remove("display_hide");
-  document.querySelector(".portimg8").classList.remove("display_hide");
+  //$ Retirer le display_hide des éléments qui ne concernent pas Image
+  const hidedisplay = document.querySelectorAll(".portfolio_img");
 
+  hidedisplay.forEach(function (hidedisp) {
+    hidedisp.classList.remove("display_hide");
+  });
+
+  //$ Ajouter le display_hide sur les éléments quiconcernent pas Image
   const divs = document.querySelectorAll('.display__image');
   for (let i = 0; i < divs.length; i++) {
     divs[i].classList.toggle('display_hide');
@@ -69,22 +67,21 @@ document.getElementById("display_image").addEventListener("click", function () {
 });
 
 document.getElementById("display_video").addEventListener("click", function () {
-  document.querySelector(".portimg1").classList.remove("display_hide");
-  document.querySelector(".portimg2").classList.remove("display_hide");
-  document.querySelector(".portimg3").classList.remove("display_hide");
-  document.querySelector(".portimg4").classList.remove("display_hide");
-  document.querySelector(".portimg5").classList.remove("display_hide");
-  document.querySelector(".portimg6").classList.remove("display_hide");
-  document.querySelector(".portimg7").classList.remove("display_hide");
-  document.querySelector(".portimg8").classList.remove("display_hide");
+  //$ Retirer le display_hide des éléments qui ne concernent pas Video
+  const hidedisplay = document.querySelectorAll(".portfolio_img");
 
+  hidedisplay.forEach(function (hidedisp) {
+    hidedisp.classList.remove("display_hide");
+  });
+
+  //$ Ajouter le display_hide sur les éléments quiconcernent pas Video
   const divs = document.querySelectorAll('.display__video');
   for (let i = 0; i < divs.length; i++) {
     divs[i].classList.toggle('display_hide');
   }
 });
 
-//$ Classe current (à améliorer)
+//$ Classe current
 document.querySelector("#display_all").addEventListener("click", function () {
   document.querySelector("#display_all").classList.toggle("current");
   document.querySelector("#display_image").classList.remove("current");
