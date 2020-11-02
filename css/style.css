@@ -1,0 +1,486 @@
+:root {
+    --primary-color: #c43b6f;
+    --secondary-color: rgb(104, 103, 103);
+    --horizontal-line:  rgb(199, 197, 197);
+    --footer-color: rgb(24, 24, 24);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto 3rem auto;
+}
+
+.input-focus:focus {
+    outline-color: var(--primary-color);
+}
+
+.btn-first {
+    padding: .5rem 1rem;
+    border: 1px solid var(--primary-color);
+    background: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-second {
+    padding: .5rem 1rem;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.horizontal-line {
+    border-top: 4px solid var(--primary-color);
+    width: 100px;
+    margin: 2rem auto;
+}
+
+.heading-style {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.required {
+    color: var(--primary-color);
+}
+
+.horizontal-line-footer {
+    border-top: 4px solid var(--primary-color);
+    width: 50px;
+    margin: .2rem 0 1rem 0;
+}
+
+/* HEADER */
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 150px;
+    margin-left: 5rem;
+}
+
+#top-nav {
+    align-self: center;
+    padding-right: 5rem;
+}
+
+#top-nav ul {
+    display: flex;
+}
+
+#top-nav li {
+    list-style: none;
+    padding-left: 3rem;
+}
+
+#top-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+}
+
+#top-nav a:hover {
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.icon {
+    display: none;
+}
+
+/* BANNER */
+.bg-mountain {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.bg-mountain-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.heading-banner {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.paragraph-banner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn-banner {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    line-height: 1.5;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: .5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+.btn-banner:hover {
+    font-weight: bold;
+}
+
+/* ABOUT */
+#about {
+    background: #fff;
+    display: flex;
+    padding: 0 5rem;
+}
+
+.why, .what, .details {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.what {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.heading-about {
+    margin-bottom: 2rem;
+}
+
+.p2-why {
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+
+.p2-why a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.p2-why a:hover {
+    font-weight: bold;
+}
+
+.h3-about {
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.what i {
+    float: left;
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+.what-content {
+    margin: 1rem 0;
+}
+
+.details-bloc {
+    border: 1px solid var(--secondary-color);
+    margin: 1rem 0;
+    padding: .5rem;
+}
+
+.details .details-bloc i{
+    color: var(--primary-color);
+}
+
+.details p {
+    font-size: 0.8rem;
+}
+
+.panel {
+    display: none;
+}
+
+.open .panel{
+    display: block;
+}
+
+.h3-about button {
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+/* PORTFOLIO */
+
+#portfolio .portfolio-container {
+    background: #fff;
+    border-bottom: 1px solid var(--horizontal-line);
+}
+
+.portfolio-img {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.portfolio-img img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.portfolio-links .current {
+    color: var(--primary-color);
+}
+
+.portfolio-links {
+    align-self: center;
+}
+
+.portfolio-links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.portfolio-links a:hover {
+    color: var(--primary-color);
+}
+
+.btn-first:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+
+/* TESTIMONIALS */
+.testimonials-container {
+    background: #fff;
+    padding: 0 5rem;
+}
+
+.testimonials-container .testi-pic {
+    height: 100px;
+    padding: 0 1rem;
+}
+
+.testimonials-container .testi-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials-container .testi-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--horizontal-line);
+    border-bottom: 1px solid var(--horizontal-line);
+}
+
+.testimonials-container .testi-2 .testi-txt {
+    text-align: end;
+}
+
+.testimonials-container .testi-txt {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.testimonials-container .italic {
+    font-style: italic;
+    padding-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.testimonials-button {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+/* CALL TO ACTION */
+.cta-container {
+    background: url('../img/fondetoile.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 330px;
+    color: #fff;
+}
+
+.cta-text {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 0 5rem;
+}
+
+.cta-btn {
+    text-align: center;
+    margin: auto;
+}
+
+.btn-second:hover {
+    background: var(--primary-color);
+}
+
+/* CONTACT */
+.contact-container {
+    background: #fff;
+    padding-bottom: 3rem;
+}
+
+.form {
+    display: flex;
+    padding: 0 5rem;
+}
+
+.form input {
+    background: rgb(233, 230, 230);
+    border: none;
+    height: 40px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.form-left, .form-right {
+    width: 100%;
+}
+
+.form-left {
+    padding-right: 1rem;
+}
+
+.form-right {
+    padding-left: 1rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+#message {
+    height: 119px;
+    background: rgb(233, 230, 230);
+    border: none;
+}
+
+/* FOOTER */
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    background: var(--footer-color);
+    font-size: .9rem;
+    padding: 0 5rem;
+}
+
+.heading-footer {
+    text-transform: uppercase;
+}
+
+.footer-newsletter, .footer-about, .footer-twitter {
+    margin: 2rem 0;
+    flex: 1;
+}
+
+.footer-newsletter {
+    margin: 2rem;
+}
+
+.footer-bold { font-weight: bold; }
+.footer-style { 
+    color: var(--primary-color); 
+    text-decoration: none;
+}
+
+.footer-style:hover {
+    font-weight: bold;
+}
+
+.footer-about-txt input {
+    border: none;
+    background: var(--secondary-color);
+    padding: 1rem;
+    width: 255px;
+    margin: 1rem 0;
+}
+
+::placeholder {
+    color: #fff;
+    font-style: italic;
+}
+
+.go-top {
+    width: 100%;
+    background: var(--footer-color);
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem 1rem 0;
+    color: var(--secondary-color);
+}
+
+.go-top a:hover {
+    opacity: .9;
+}
+
+.link-top:visited {
+    color: var(--secondary-color);
+}
+
